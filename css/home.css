@@ -1,0 +1,12 @@
+#team{
+    display: flex;
+    -webkit-display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+#team img {
+    height: 200px;
+}
