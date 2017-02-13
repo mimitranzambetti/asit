@@ -1,9 +1,22 @@
+.strip{
+    padding: 20px;
+    color: white;
+    font-weight: 700;
+    min-width: 600px;
+    max-width: 1000px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: rgba(50,50,50,0.5);
+}
+
 .teamrow{
     margin: auto;
     display: flex;
     -webkit-display: flex;
-    -webkit-justify-content: center;
-    justify-content: center;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
     flex-wrap: nowrap;
     flex-direction: row;
     width: 80%; 
@@ -11,10 +24,25 @@
 }
 
 .teamrow div {
-    width: 30%;
+    width: 25%;
+    padding: 2px;
 }
 
 .teamrow div img{
-    width: 80%;
-    padding: 5%;
+    width: 90%;
+    margin: 5px;
+    
+}
+
+.teamrow div h2{
+    margin: 2px;
+    font-size: 14pt;
+}
+
+.teamrow div h3{
+    margin: 2px;
+    font-size: 11pt;
+    font-weight: 400;
+    font-style:italic;
+    color: #bfbfbf;
 }

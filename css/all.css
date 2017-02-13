@@ -1,46 +1,57 @@
 body{
 font-family: 'Nunito', sans-serif;
-background-color: darkslategray;
+background-color: 1f1f1f;
 }
 
 #container{
     margin: auto;
+    padding-top: 25px;
     padding-bottom: 40px;
+    width: 90%;
     min-width: 800px;
     max-width: 1200px;
 }
 
 #header{
-    width: 90%;
+    min-width: 800px;
+    max-width: 1200px;
     height: 250px;
     margin: auto;
-    background-color: darkslategray;
-    border-bottom: 20px solid green;
+    margin-top: 20px;
+    background-color: #1f1f1f;
     text-align: center;
-    min-width: 800px;
+    border-radius: 10px;
 }
 
 #header img{
-    height: 80%;
+    height: 70%;
     margin: 20px;
 }
 
 #navbar {
+    border-radius: 10px;
     font-weight: bold;
     font-size: 12pt;  
+    height: 50px;
+    background-color: green;
+    padding-top: 15px;
+    width: 80%;
+    margin: auto;
 }
 
 #navbar ul{
     display: flex;
     display: -webkit-flex;
-    -webkit-justify-content: space-around;
-    justify-content: space-around;
+    -webkit-justify-content: center;
+    justify-content: center;
     flex-direction: row;
 }
 
 #navbar li{
     flex: none;
     list-style: none;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 
 #navbar li a{
@@ -53,3 +64,17 @@ background-color: darkslategray;
 #navbar li a:hover, a:focus{
     color: greenyellow;
 }
+
+.strip{
+    padding: 20px;
+    color: white;
+    font-weight: 700;
+    min-width: 600px;
+    max-width: 1000px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: rgba(50,50,50,0.5);
+}
+
