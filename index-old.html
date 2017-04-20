@@ -1,0 +1,155 @@
+<!--DOCTYPE HTML-->
+<html lang=en>
+    
+    <head>
+        <meta charset="UTF-8">
+        <title> A Slime in Time</title>
+        
+        
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+<!--font import-->
+<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,400i,700" rel="stylesheet">
+        
+<!--favicon-->
+<link rel=icon href="img/favicon.png">
+    
+<!--stylesheet for home page-->
+<link rel="stylesheet" type="text/css" href="static.css">
+<link rel="stylesheet" type="text/css" href="home.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+       <!-- <script src="jquery.js"></script>  -->
+
+        <script>
+    $(document).ready(function(){
+      $(window).scroll(function() { // check if scroll event happened
+        if ($(document).scrollTop() > 150) { // check if user scrolled more than 50 from top of the browser window
+          $(".header").css("background-color", "RGBA(171,226,224,0.8)"); // if yes, then change the color of header to white
+           $(".header").css("height", "25px");
+            $(".header").css("box-shadow", "10px 0px 10px gray");
+           $(".navlinks a").css("color", "#458989");
+            $(".navlinks a").css("margin", "0px 10px");
+            $(".logo").css("height", "30px");
+            $(".logo").css("float", "left");
+            $(".navbar").css("float", "right");
+            
+            
+        } else {
+          $(".header").css("background-color", "transparent");
+$(".header").css("box-shadow", "0px 0px 0px white");
+            $(".header").css("height", "50px");
+           $(".navlinks a").css("color", "white");
+            $(".navlinks a").css("margin", "15px 10px");
+            $(".logo").css("float", "left");
+            $(".logo").css("height", "50px");
+            $(".navbar").css("float", "right");
+        
+        }
+      });
+        
+
+        
+    });
+</script>
+        
+<!--colors: 65D33D slime green. background darkslategray. text written in dark slate gray #4b4b4b-->
+
+        
+    </head>
+    
+    
+    <body>
+        
+        <div id="header"class="header">
+            <a href="index.html"><img src="img/logo.png" class="logo"></a> <br>
+            <div class="navbar">
+                    <div class="navlinks">
+                    <a href="" target="_blank">How to Play</a>
+                    <a href="" target="_blank">Media</a>
+                    <a href="" target="_blank">News</a>
+                    <a href="" target="_blank">About</a>
+                    <a href="" target="_blank">Support</a>
+                </div>
+            </div> <!--close navbar-->
+        </div> <!--close header-->
+    
+        <div id="container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/vDEyhLACRoA" frameborder="0" allowfullscreen></iframe>
+        <div class="strip"><h2>How to Play</h2>
+            <br></div> <!--close how to play-->
+        
+        <div class="strip"><h2>Media</h2>
+            <br></div> <!--close media-->
+        
+        <div class="strip"><h2>News</h2>
+            <br></div> <!--close news-->
+        
+        <div class="strip"> 
+            <h2>Our Team</h2>
+            <br>
+            
+        <div class="teamrow">
+            <div><img src="img/josh.png"><br>
+                <h2>Josh Bollar</h2>
+                <h3>n00b</h3></div>
+            <div><img src="img/ian.png"><br>
+                <h2>Ian Glow</h2>
+                <h3>ok</h3></div>
+            <div><img src="img/derek.png"><br>
+                <h2>Derek Eom</h2>
+                <h3>n00b</h3></div>
+            
+        </div>
+            
+        <div class="teamrow">
+            <div><img src="img/guayo.png"><br>
+                <h2>Guayo</h2>
+                <h3>ok</h3></div>
+            <div><img src="img/uday.png"><br>
+                <h2>Uday</h2>
+                <h3>ok</h3></div>
+            <div><img src="img/kevin.png"><br>
+                <h2>Kevin</h2>
+                <h3>ok</h3></div>
+        </div>
+            
+        
+        
+        <div class="teamrow">
+            <div><img src="img/drew.png"><br>
+                <h2>Drew Ofkenfuss</h2>
+                <h3>hey</h3></div>
+            <div><img src="img/christie.png"><br>
+                <h2>Christie Xu</h2>
+                <h3>adorable</h3></div>
+            <div><img src="img/mimi.png"><br>
+                <h2>Mimi Tran Zambetti</h2>
+                <h3>rando</h3></div>
+        </div>
+        </div><!--close team strip-->
+        <br>
+            
+        </div><!--close container-->
+        
+        <div id="footer"></div> <!--close footer-->
+        <br style="clear:both"/>
+        
+        <div class="strip"><h2>Support</h2>
+            <br> <!--close support-->
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfEpFjuBU968Fa8kHzc-i5AUHu7PFhyr44_o_mIiDeRFxPBvw/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+            </div>
+        
+    </body>
+    
+    
+</html>

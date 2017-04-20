@@ -1,0 +1,312 @@
+@font-face {
+    font-family: kenyan;
+    src: url("kenyan coffee rg.ttf");
+}
+body{
+    padding: 0px;
+    font-family: 'Nunito', sans-serif;
+    background-color: ;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #444;
+}
+
+h1{
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 1px;
+    color: #81c62d;
+}
+
+
+.logo{
+    height: 50px;
+    padding: 0px 40px;
+    transition: 0.2s;
+        -moz-transition: 0.2s;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    transition: 0.4s;
+        -moz-transition: 0.4s;
+    height: 90px;
+    padding: 20px 0px;
+}
+
+.splash{
+    text-align: center;
+	background-position: 50% 40%;
+	background-size: 100vw;
+	height: 200px;
+	padding: 30px;
+	vertical-align: middle;
+    
+}
+	#splash-about {
+		background: url('img/poster.jpg') no-repeat;
+        height:200px;
+         background-attachment: fixed;
+    background-position: 0px -250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+        
+	}
+
+#dealroomheader{
+    background: url('img/productshot/carrothold.jpg') no-repeat;
+        height:200px;
+         background-attachment: fixed;
+    background-position: 0px -250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: #eee;
+}
+
+.navbar {
+	padding: 0px 40px;
+    
+}
+
+	.navlinks a {
+		display: inline-block;
+		letter-spacing: 2px;
+		margin: 15px 10px;
+        opacity: 0.8;
+        transition: 0.2s;
+        -moz-transition: 0.2s;
+	}
+
+    .navlinks .current {
+		padding-bottom: 2px;
+		border-bottom: 1px solid #ccc;
+	}
+
+
+    .navlinks a:hover {
+        opacity: 1;
+	}
+
+.container{
+    padding: 2%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+
+.button{
+    letter-spacing: 2px;
+    width: 150px;
+    padding: 8px 40px;   
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: #458989;
+    color: whitesmoke;
+    transition: 0.2s;
+        -moz-transition: 0.2s;
+      box-shadow: 0px 1px 5px grey;
+}
+
+.button:hover{
+    border: 1px solid #ffefbb;
+    background-color: #458989;
+    color: #ffefbb;
+}
+
+.title{
+    font-family: 'Fredoka One', sans-serif;
+    letter-spacing: 1px;
+    color: white;
+    text-shadow: 1px 1px 10px gray;
+    margin: 15px;
+    font-size: 40pt;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    -webkit-display: flex;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: center;
+}
+
+.gallery img {
+    margin: 20px 20px;
+}
+
+.sticker{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.team{
+    width: 200px;
+    height: 200px;
+    
+    border-radius: 5px;
+}
+
+
+.footer{
+    padding: 20px;
+    height: 80px;
+    background-color: #222;
+    color: #888;
+    font-size: 12px;
+    
+}
+
+.media-links img {
+	margin: 10px;
+	width: 30px;
+	opacity: .5;
+	transition: .5s;
+    -moz-transition: .5s;
+}
+
+.media-links img:hover {
+	opacity: 1;
+}
+
+
+#private-side{
+    height: 60px;
+    float:right;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+
+#bts{
+    background: url('img/productshot/persistholdje-.jpg') no-repeat center top;
+    background-size: cover;
+    height: 500px;
+        
+        background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#nameleft{
+    float: left;
+    width: 20%;
+    height: 100%;
+    text-align: right; 
+}
+
+#nameright{
+    float: right;
+    width: 70%;
+    height: 100%;
+    padding-right: 10%;
+    
+}
+
+#breakdownphoto{
+     background: url('img/productshot/window.jpg') no-repeat center top;
+    background-size: cover;
+    height: 300px;
+        
+        background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#productleft{
+    float:left;
+    width: 50%;
+    
+}
+
+.productsticker{
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    
+}
+
+
+/**slideshow **/
+#thumbnails {
+margin:auto;
+height: 100%;
+    background-color: white;
+    padding: 1%;
+   
+}
+
+    .thumbnail{
+        padding: 1%;
+        border-radius: 200px;
+        position: relative;
+    }
+
+/** form **/
+
+ #form {
+            float: right;
+            width: 50%;
+            text-align: left;
+     padding-top: 3%;
+        }
+        
+       
+        
+        .label {
+            width: 150px;
+            float: left;
+            clear: both;
+            text-align: right;
+            margin-right: 30px;
+             color: #98dbd9;
+            font-size: 11pt;
+        }
+        
+        
+        input{
+            border-color: transparent;
+            background-color: rgba(0,0,0, 0.1);
+            
+        
+        }
+        
+        #done{
+            background-color:  #98dbd9;
+            font-size: 10pt;
+        }
+        
+        #reset {
+            background-color:  #98dbd9;
+            font-size: 10pt;
+
+        }
