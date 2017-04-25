@@ -121,7 +121,7 @@ a{
         opacity: 1;
 	}
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 768px) {
    .navlinks a {
 		display: inline-block;
 		letter-spacing: 2px;
