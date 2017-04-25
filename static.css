@@ -108,7 +108,7 @@ a{
 
 .button{
     letter-spacing: 2px;
-    width: 150px;
+    width: 0px;
     padding: 8px 40px;   
     font-size: 15px;
     border-radius: 10px;
@@ -116,7 +116,22 @@ a{
     color: whitesmoke;
     transition: 0.2s;
         -moz-transition: 0.2s;
-      box-shadow: 0px 1px 5px grey;
+    box-shadow: 0px 1px 5px grey;
+}
+
+@media screen and (min-width: 1024px) {
+    .button{
+        letter-spacing: 2px;
+        width: 150px;
+        padding: 8px 40px;   
+        font-size: 15px;
+        border-radius: 10px;
+        background-color: #458989;
+        color: whitesmoke;
+        transition: 0.2s;
+            -moz-transition: 0.2s;
+        box-shadow: 0px 1px 5px grey;
+    }
 }
 
 .button:hover{
