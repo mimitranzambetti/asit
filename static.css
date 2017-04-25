@@ -2,6 +2,7 @@
     font-family: kenyan;
     src: url("kenyan coffee rg.ttf");
 }
+
 body{
     padding: 0px;
     font-family: 'Nunito', sans-serif;
@@ -13,6 +14,11 @@ body{
     height: 100%;
     text-align: center;
     color: #444;
+}
+
+iframe{
+     width: 80vw;
+     height: 45vw;
 }
 
 h1{
