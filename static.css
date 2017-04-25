@@ -81,14 +81,12 @@ a{
     
 }
 
-	.navlinks a {
-		display: inline-block;
+ .navlinks a {
+		display: inline;
 		letter-spacing: 2px;
-		margin: 15px 10px;
-        opacity: 0.8;
-        transition: 0.2s;
-        -moz-transition: 0.2s;
+		visibility: hidden;
 	}
+	
 
     .navlinks .current {
 		padding-bottom: 2px;
@@ -100,11 +98,14 @@ a{
         opacity: 1;
 	}
 
-@media screen and (min-width: 1024px) {
-    .navlinks a {
-		display: inline;
+@media screen and (min-width: 1000px) {
+   .navlinks a {
+		display: inline-block;
 		letter-spacing: 2px;
-		visibility: hidden;
+		margin: 15px 10px;
+        opacity: 0.8;
+        transition: 0.2s;
+        -moz-transition: 0.2s;
 	}
 }
 
