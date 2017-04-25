@@ -1,182 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel=icon href="img/favicon.png">
-        
-        <meta charset="utf-8" />
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta property="og:title" content="Lemonade Gals" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://mimi-tranzambetti.github.io/lemonadegals/" />
-        <meta property="og:description" content="Lemonade Gals is a sticker creating collaborative. We put sweet spins on sour situations" />
-        <meta property="og:image" content="https://mimi-tranzambetti.github.io/lemonadegals/img/logonew.png" />
-        <title>A Slime in Time</title>
-        <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Nunito:400,800|Rhodium+Libre" rel="stylesheet">
-        
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
-        <link rel="stylesheet" type="text/css" href="static.css">
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 
-        <script>
-    $(document).ready(function(){
-      $(window).scroll(function() { // check if scroll event happened
-        if ($(document).scrollTop() > 150) { // check if user scrolled more than 50 from top of the browser window
-          $(".header").css("background-color", "RGBA(159, 229, 55,0.8)"); // if yes, then change the color of header to white
-           $(".header").css("height", "25px");
-            $(".header").css("box-shadow", "10px 0px 10px gray");
-           $(".navlinks a").css("color", "#3d590e");
-            $(".navlinks a").css("margin", "0px 10px");
-            $(".logo").css("height", "30px");
-            $(".logo").css("float", "left");
-            $(".navbar").css("float", "right");
-            
-            
-        } else {
-          $(".header").css("background-color", "transparent");
+<head>
+    <link rel=icon href="img/favicon.png">
 
-            $(".header").css("height", "50px");
-            $(".header").css("box-shadow", "0px 0px 0px white");
-           $(".navlinks a").css("color", "white");
-            $(".navlinks a").css("margin", "15px 10px");
-            $(".logo").css("float", "left");
-            $(".logo").css("height", "50px");
-            $(".navbar").css("float", "right");
-        
-        }
-      });
-    });
-            
-     $('a[href*="#howto"]:not([href="#"])').click(function (){
-        $('html, body').animate({
-            scrollTop: $("#howto").offset().top
-        }, 800);
-    });
-    $('a[href*="#about"]:not([href="#"])').click(function (){
-        $('html, body').animate({
-            scrollTop: $("#about").offset().top
-        }, 800);
-    });
-    $('a[href*="#team"]:not([href="#"])').click(function (){
-        $('html, body').animate({
-            scrollTop: $("#team").offset().top
-        }, 800);
-    });
-    $('a[href*="#support"]:not([href="#"])').click(function (){
-        $('html, body').animate({
-            scrollTop: $("#support").offset().top
-        }, 800);
-    });
-</script>
- 
-        
-    </head>
-    <body>
-        <div class="header">
-            
-            <a href="index.html"><img src="img/logo.png" alt="logo" class="logo"> </a>
-            
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Lemonade Gals" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mimi-tranzambetti.github.io/lemonadegals/" />
+    <meta property="og:description" content="Lemonade Gals is a sticker creating collaborative. We put sweet spins on sour situations"
+    />
+    <meta property="og:image" content="https://mimi-tranzambetti.github.io/lemonadegals/img/logonew.png" />
+    <title>A Slime in Time</title>
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Nunito:400,800|Rhodium+Libre" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="static.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () { // check if scroll event happened
+                if ($(document).scrollTop() > 150) { // check if user scrolled more than 50 from top of the browser window
+                    $(".header").css("background-color", "RGBA(159, 229, 55,0.8)"); // if yes, then change the color of header to white
+                    $(".header").css("height", "25px");
+                    $(".header").css("box-shadow", "10px 0px 10px gray");
+                    $(".navlinks a").css("color", "#3d590e");
+                    $(".navlinks a").css("margin", "0px 10px");
+                    $(".logo").css("height", "30px");
+                    $(".logo").css("float", "left");
+                    $(".navbar").css("float", "right");
+
+
+                } else {
+                    $(".header").css("background-color", "transparent");
+
+                    $(".header").css("height", "50px");
+                    $(".header").css("box-shadow", "0px 0px 0px white");
+                    $(".navlinks a").css("color", "white");
+                    $(".navlinks a").css("margin", "15px 10px");
+                    $(".logo").css("float", "left");
+                    $(".logo").css("height", "50px");
+                    $(".navbar").css("float", "right");
+
+                }
+            });
+
+            $(window).css("width", "100%");
+        });
+
+        $('a[href*="#howto"]:not([href="#"])').click(function () {
+            $('html, body').animate({
+                scrollTop: $("#howto").offset().top
+            }, 800);
+        });
+        $('a[href*="#about"]:not([href="#"])').click(function () {
+            $('html, body').animate({
+                scrollTop: $("#about").offset().top
+            }, 800);
+        });
+        $('a[href*="#team"]:not([href="#"])').click(function () {
+            $('html, body').animate({
+                scrollTop: $("#team").offset().top
+            }, 800);
+        });
+        $('a[href*="#support"]:not([href="#"])').click(function () {
+            $('html, body').animate({
+                scrollTop: $("#support").offset().top
+            }, 800);
+        });
+
+    </script>
+
+
+</head>
+
+<body>
+    <div class="header">
+
+        <a href="index.html"><img src="img/logo.png" alt="logo" class="logo"> </a>
+
         <div class="navbar">
             <div class="navlinks">
-              <a href="#howto">How to Play</a>
-              <a href="#about">About</a>
-              <a href="#team">About the Team</a>
-              <a href="#support">Support</a>
+                <a href="#howto">How to Play</a>
+                <a href="#about">About</a>
+                <a href="#team">About the Team</a>
+                <a href="#support">Support</a>
             </div>
-        </div> <!--close navbar-->
-            
-        </div> <!--close header-->
-        
-        <div class="splash" id="splash-about">
-            <div>
+        </div>
+        <!--close navbar-->
+
+    </div>
+    <!--close header-->
+
+    <div class="splash" id="splash-about">
+        <div>
             <br><br><br><br><br>
             <div class="title"></div>
-            </div>
+        </div>
         <div>&nbsp;</div>
-        </div> <!--close splash--> 
-        
-        <div class="container" style="background-color: #fffef9;" id=about> 
-            <br> <br>
-        
+    </div>
+    <!--close splash-->
+
+    <div class="container" style="background-color: #fffef9;" id=about>
+        <br> <br>
+
         <iframe width="560" height="315" src="https://www.youtube.com/embed/vDEyhLACRoA" frameborder="0" allowfullscreen></iframe>
-            
+
         <h1>About the Game</h1>
-        <p style=" padding-right:20%; padding-left:20%;"> For early Hololens adopters, A Slime In Time is an easy to play holographic game that is the only game that offers real time multiplayer strategic gameplay on an augmented reality platform, blending charming visuals with your everyday environment, allowing you to conquer your living room.
- </p>
+        <p style=" padding-right:20%; padding-left:20%;"> For early Hololens adopters, A Slime In Time is an easy to play holographic game that is the only game that offers
+            real time multiplayer strategic gameplay on an augmented reality platform, blending charming visuals with your
+            everyday environment, allowing you to conquer your living room.
+        </p>
+    </div>
+    <div class="container" style="background-color: RGBA(159, 229, 55,0.8); padding-bottom: 5%;">
+        <div class="container" style="background-color: RGBA(205, 255, 58,0.5); margin-top:4%; padding-bottom:3%; " id=howto>
+            <br>
+            <h1 style="color:white;">How to Play</h1>
+            <p style=" padding-right:20%; padding-left:20%; font-size: x-large"> Coming soon to the Window's Store!
+            </p>
         </div>
-        <div class="container" style="background-color: RGBA(159, 229, 55,0.8); padding-bottom: 5%;" > 
-        <div class="container" style="background-color: RGBA(205, 255, 58,0.5); margin-top:4%; padding-bottom:3%; " id=howto> 
-<br>
-        <h1 style="color:white;">How to Play</h1>
-        <p style=" padding-right:20%; padding-left:20%;"> For early Hololens adopters, A Slime In Time is an easy to play holographic game that is the only game that offers real time multiplayer strategic gameplay on an augmented reality platform, blending charming visuals with your everyday environment, allowing you to conquer your living room.
- </p>
-            </div>
-        </div>
-        
-        <div class="container" style="background-color: #fffef9;" id=team> 
-            <br>         <hr><br>
+    </div>
+
+    <div class="container" style="background-color: #fffef9;" id=team>
+        <br>
+        <hr><br>
         <h1>The Slime in Time Team</h1>
-        <p style=" padding-right:20%; padding-left:20%;"> 
- </p>
-        </div>
-        
-        <div class="container" style="background-color: #fffef9;"> 
+        <p style=" padding-right:20%; padding-left:20%;">
+        </p>
+    </div>
+
+    <div class="container" style="background-color: #fffef9;">
         <h1></h1>
         <div class="gallery">
-        
-        <div id=""><img src="img/josh.png" class="team"><h3>Josh Bollar<br></h3><p id="" style="margin-right:10%; margin-left:10%;"> 
-            <b>Role: </b> Producer <br> 
-           <b> Phone: </b> 4084319386 <br>
-           <b> E-mail: </b> jbollar@usc.edu</p></div>
-            
-        <div id="ianprofile"><img src="img/ian.png" class="team"><h3>Ian Glow<br></h3><p id="" style="margin-right:10%; margin-left:10%;"> 
-            <b>Role: </b> Team Lead <br> 
-           <b> Phone: </b> 9288305283 <br>
-           <b> E-mail: </b> ianglow@usc.edu</p></div>
 
-        <div id="kevinprofile"><img src="img/kevin.png" class="team"><h3>Kevin Lei<br></h3><p id="" style="margin-right:10%; margin-left:10%;"> 
-             <b>Role: </b> Engineering Lead <br> 
-           <b> Phone: </b> 3037317078 <br>
-           <b> E-mail: </b> yinghanl@usc.edu </p></div>
-            
-        <div id="guayoprofile"><img src="img/guayo.png" class="team"><h3>Guayo Llach<br></h3><p id="" style="margin-right:10%; margin-left:10%;"> 
-            <b>Role: </b> Art <br> 
-           <b> Phone: </b> 6507229655 <br>
-           <b> E-mail: </b> guayo.llach@gmail.com</p></div>
-            
-        <div id="derekprofile"><img src="img/derek.png" class="team"><h3>Derek Om<br></h3><p id="" style="margin-right:10%; margin-left:10%;"> 
-            <b>Role: </b> Engineering <br> 
-           <b> Phone: </b> 6262528215 <br>
-           <b> E-mail: </b> derekeom@gmail.com</p></div>
-            
-        <div id="drewprofile"><img src="img/drew.png" class="team"><h3>Drew Okenfuss<br></h3><p id="" style="margin-right:10%; margin-left:10%;"> 
-            <b>Role: </b> Engineering <br> 
-           <b> Phone: </b> 4084319386 <br>
-           <b> E-mail: </b> okenfuss@usc.edu</p></div>
-            
-        <div id="christieprofile"><img src="img/christie.png" class="team"><h3>Christie Xu<br></h3><p id="" style="margin-right:10%; margin-left:10%;"> 
-            <b>Role: </b> Art + Engineering <br> 
-           <b> Phone: </b> 8326039596 <br>
-           <b> E-mail: </b> xuchrist@usc.edu</p></div>
-            
-        <div id="adamprofile"><img src="img/adam.png" class="team"><h3>Adam Barnett<br></h3><p id="" style="margin-right:10%; margin-left:10%;"> 
-            <b>Role: </b> Sound <br> 
-           <b> Phone: </b> 9405771989 <br>
-           <b> E-mail: </b> tabadam@gmail.com </p></div>
-            
-            
-        <div id="mimiprofile"><img src="img/mimi.png" class="team"><h3>Mimi Tran Zambetti<br></h3><p id="" style="margin-right:10%; margin-left:10%;"> 
-            <b>Role: </b> Production <br> 
-           <b> Phone: </b> 4088594009 <br>
-           <b> E-mail: </b> tranzamb@usc.edu</p></div>
-            
-        </div> <!--close img gallery-->
-        </div> <!--close team breakdown div-->
-        
-            <!---
+            <div id=""><img src="img/josh.png" class="team">
+                <h3>Josh Bollar<br></h3>
+                <p id="" style="margin-right:10%; margin-left:10%;">
+                    <b>Role: </b> Producer <br>
+                    <b> E-mail: </b> jbollar@usc.edu</p>
+            </div>
+
+            <div id="ianprofile"><img src="img/ian.png" class="team">
+                <h3>Ian Glow<br></h3>
+                <p id="" style="margin-right:10%; margin-left:10%;">
+                    <b>Role: </b> Team Lead <br>
+                    <b> E-mail: </b> ianglow@usc.edu</p>
+            </div>
+
+            <div id="kevinprofile"><img src="img/kevin.png" class="team">
+                <h3>Kevin Lei<br></h3>
+                <p id="" style="margin-right:10%; margin-left:10%;">
+                    <b>Role: </b> Engineering Lead <br>
+                    <b> E-mail: </b> yinghanl@usc.edu </p>
+            </div>
+
+            <div id="guayoprofile"><img src="img/guayo.png" class="team">
+                <h3>Guayo Llach<br></h3>
+                <p id="" style="margin-right:10%; margin-left:10%;">
+                    <b>Role: </b> Art <br>
+                    <b> E-mail: </b> guayo.llach@gmail.com</p>
+            </div>
+
+            <div id="derekprofile"><img src="img/derek.png" class="team">
+                <h3>Derek Om<br></h3>
+                <p id="" style="margin-right:10%; margin-left:10%;">
+                    <b>Role: </b> Engineering <br>
+                    <b> E-mail: </b> derekeom@gmail.com</p>
+            </div>
+
+            <div id="drewprofile"><img src="img/drew.png" class="team">
+                <h3>Drew Okenfuss<br></h3>
+                <p id="" style="margin-right:10%; margin-left:10%;">
+                    <b>Role: </b> Engineering <br>
+                    <b> E-mail: </b> okenfuss@usc.edu</p>
+            </div>
+
+            <div id="christieprofile"><img src="img/christie.png" class="team">
+                <h3>Christie Xu<br></h3>
+                <p id="" style="margin-right:10%; margin-left:10%;">
+                    <b>Role: </b> Art + Engineering <br>
+                    <b> E-mail: </b> xuchrist@usc.edu</p>
+            </div>
+
+            <div id="adamprofile"><img src="img/adam.png" class="team">
+                <h3>Adam Barnett<br></h3>
+                <p id="" style="margin-right:10%; margin-left:10%;">
+                    <b>Role: </b> Sound <br>
+                    <b> E-mail: </b> tabadam@gmail.com </p>
+            </div>
+
+            <div id="mimiprofile"><img src="img/mimi.png" class="team">
+                <h3>Mimi Tran Zambetti<br></h3>
+                <p id="" style="margin-right:10%; margin-left:10%;">
+                    <b>Role: </b> Production <br>
+                    <b> E-mail: </b> tranzamb@usc.edu</p>
+            </div>
+
+        </div>
+        <!--close img gallery-->
+    </div>
+    <!--close team breakdown div-->
+
+    <!---
             
             <div class="gallery">
         <div><img src="img/placeholder.jpg" class="team" id="jennyprofile"> <h3 style="color:white;">Jenny Chung</h3><p id="jennytext">Jenny is real real cool</p></div>
@@ -184,65 +215,67 @@
         <div><img src="img/placeholder.jpg" class="team" id="asiaprofile"><h3 style="color:white;">Asia Clarkson</h3><p id="asiatext">Jenny is real real cool</p></div>
         <div><img src="img/placeholder.jpg" class="team" id="mimiprofile"><h3 style="color:white;">Mimi Tran Zambetti</h3><p id="mimitext">Jenny is real real cool</p></div>
         </div> <!--close img gallery-->
-         <!--close team breakdown div-->
-        
-    
-        <div class="strip" id=support>
-            <br><hr><br><h1>Support</h1>
-            
-            <h2 style="padding: 2%; padding-left:5%;padding-right:5%;">Questions? Reach out to us on our Facebook page or fill out this contact form below</h2>
-            <br> <!--close support-->
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfEpFjuBU968Fa8kHzc-i5AUHu7PFhyr44_o_mIiDeRFxPBvw/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-            </div>
-        <br><br>
-        <div class="footer">
+    <!--close team breakdown div-->
+
+
+    <div class="strip" id=support>
+        <br>
+        <hr><br>
+        <h1>Support</h1>
+
+        <h2 style="padding: 2%; padding-left:5%;padding-right:5%;">Questions? Reach out to us on our Facebook page or fill out this contact form below</h2>
+        <br>
+        <!--close support-->
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfEpFjuBU968Fa8kHzc-i5AUHu7PFhyr44_o_mIiDeRFxPBvw/viewform?embedded=true"
+            width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    </div>
+    <br><br>
+    <div class="footer">
         <div class="media-links">
-        <a href="https://www.facebook.com/Lemonade-Gals-1868669626708896/" target="_blank"><img src="img/fb.png"></a>
-        <a href="https://www.instagram.com/lemonade.gals/" target="_blank"><img src="img/insta.png"></a> </div>
-            
-    <p>© 2017 - A SLIME IN TIME</p></div>
-        
-    <a href="deal.html"><img src="img/logo.png" alt="logo" id="private-side"> </a> <!--private side lemons-->
-        
-    </body> <!--close body-->
-   
-    
-   <script>
-         
-        $(document).ready(function(){
-            
-            
-            $("#jennytext").hide();
-            $("#pratimatext").hide();
-            $("#asiatext").hide();
-            $("#mimitext").hide();
-            
-            $("#jennyprofile").click( function(){
-               $("#jennytext").toggle(); 
-         });
-            
-            $("#pratprofile").click( function(){
-               $("#pratimatext").toggle(); 
-         });
-            
-            $("#asiaprofile").click( function(){
-               $("#asiatext").toggle(); 
-         });
-            
-            $("#mimiprofile").click( function(){
-               $("#mimitext").toggle(); 
-         });
-            
-           
+            <a href="https://www.facebook.com/Lemonade-Gals-1868669626708896/" target="_blank"><img src="img/fb.png"></a>
+            <a href="https://www.instagram.com/lemonade.gals/" target="_blank"><img src="img/insta.png"></a>
+        </div>
 
-            
-           
-         });
-            
-        
-       
-        
+        <p>© 2017 - A SLIME IN TIME</p>
+    </div>
 
-        </script>
-    
+    <a href="deal.html"><img src="img/logo.png" alt="logo" id="private-side"> </a>
+    <!--private side lemons-->
+
+</body>
+<!--close body-->
+
+
+<script>
+    $(document).ready(function () {
+
+
+        $("#jennytext").hide();
+        $("#pratimatext").hide();
+        $("#asiatext").hide();
+        $("#mimitext").hide();
+
+        $("#jennyprofile").click(function () {
+            $("#jennytext").toggle();
+        });
+
+        $("#pratprofile").click(function () {
+            $("#pratimatext").toggle();
+        });
+
+        $("#asiaprofile").click(function () {
+            $("#asiatext").toggle();
+        });
+
+        $("#mimiprofile").click(function () {
+            $("#mimitext").toggle();
+        });
+
+
+
+
+
+    });
+</script>
+
 </html>
